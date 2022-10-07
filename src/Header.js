@@ -3,19 +3,21 @@ import styled from "styled-components";
 import { secondary, primary } from "./Color";
 
 const Div = styled.div`
+  position: fixed;
   width: 100%;
   background-color: ${secondary};
   color: ${primary};
   padding: 20px 10px;
   .sections-list {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .section {
     margin-right: 10px;
     margin-left: 10px;
     color: ${primary};
     font-weight: 700;
+    font-size:20px;
   }
 `;
 
