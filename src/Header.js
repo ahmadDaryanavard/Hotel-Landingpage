@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { secondary, primary } from "./Color";
 
+
 const Div = styled.div`
+  z-index: 100;
   position: fixed;
   width: 100%;
   background-color: ${secondary};
@@ -17,7 +19,7 @@ const Div = styled.div`
     margin-left: 10px;
     color: ${primary};
     font-weight: 700;
-    font-size:20px;
+    font-size: 20px;
   }
 `;
 

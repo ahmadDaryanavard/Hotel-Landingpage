@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import styled from "styled-components";
 import { primary } from "./Color";
+import Plx from "react-plx";
 const Div = styled.div`
   width: 100%;
 
@@ -27,6 +28,20 @@ const Div = styled.div`
     margin-bottom: 60px;
   }
 `;
+
+const parallaxData = [
+  {
+    start: 0,
+    end: 500,
+    properties: [
+      {
+        startValue: 0.4,
+        endValue: 1,
+        property: "scale",
+      },
+    ],
+  },
+];
 export default function RoomsSection() {
   return (
     <Div>
@@ -47,23 +62,27 @@ export default function RoomsSection() {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-6">
-            <div className="image-place">
-              <img
-                className="hotel-image"
-                src={require("./assets/room2.jpg")}
-                alt="هتل آلاله"
-              />
-            </div>
+          <div className="col-lg-6 mt-2">
+            <Plx className="MyAwesomeParallax" parallaxData={parallaxData}>
+              <div className="image-place">
+                <img
+                  className="hotel-image"
+                  src={require("./assets/room2.jpg")}
+                  alt="هتل آلاله"
+                />
+              </div>
+            </Plx>
           </div>
-          <div className="col-lg-6">
-            <div className="image-place">
-              <img
-                className="hotel-image"
-                src={require("./assets/room1.jpg")}
-                alt="هتل آلاله"
-              />
-            </div>
+          <div className="col-lg-6 mt-2">
+            <Plx className="MyAwesomeParallax" parallaxData={parallaxData}>
+              <div className="image-place">
+                <img
+                  className="hotel-image"
+                  src={require("./assets/room1.jpg")}
+                  alt="هتل آلاله"
+                />
+              </div>
+            </Plx>
           </div>
           <div className="col-lg-3"></div>
           <div className="col-lg-6 mt-4">
