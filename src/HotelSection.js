@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { primary } from "./Color";
+
 const Div = styled.div`
   width: 100%;
   background-color: ${primary};

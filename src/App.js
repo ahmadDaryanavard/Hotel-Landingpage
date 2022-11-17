@@ -5,7 +5,8 @@ import HotelSection from "./HotelSection";
 import RoomsSection from "./RoomsSection";
 import FacilitiesSection from "./FacilitiesSection";
 import QeshmIslandSection from "./QeshmIslandSection";
-import ReserveLinks from "./ReserveLinks";
+import BookListSection from "./BookListSection";
+import OurLocation from "./OurLocation";
 const Div = styled.div`
   direction: rtl;
 `;
@@ -16,8 +17,10 @@ function App() {
       <HotelSection />
       <RoomsSection />
       <FacilitiesSection />
+      <BookListSection />
+      <OurLocation />
       <QeshmIslandSection />
-      <ReserveLinks />
+      
     </Div>
   );
 }

@@ -119,6 +119,7 @@ export default function FacilitiesSection() {
           </div>
         </div>
         <div className="row">
+          <div className="col-12" id="facilities"></div>
           <div className="col-lg-6 my-2">
             <Plx className="MyAwesomeParallax" parallaxData={parallax1Data}>
               <div className="image-place">
@@ -131,6 +132,7 @@ export default function FacilitiesSection() {
             </Plx>
             <div className="end-element1"></div>
           </div>
+
           <div className="col-lg-6 my-2">
             <Plx className="MyAwesomeParallax" parallaxData={parallax2Data}>
               <div className="image-place">
@@ -170,9 +172,14 @@ export default function FacilitiesSection() {
           <div className="col-lg-3"></div>
           <div className="col-lg-6 mt-4">
             <div className="about-text">
-              هتل دارای 44 اتاق و سوئیت‌های تمیز و شیک در ساختمانی 8 طبقه است که
-              در سال 1394 ساخته شده‌اند. خدمات خانه‌داری در این هتل به مهمانان
-              ارائه می‌شود.
+              فضای دلنشین ایرانی برای صرف صبحانه با معماری داخلی مجلل و چشم
+              اندازی رو به خلیج فارس وجهه ای زیبا و چشمگیر به این مجموعه بخشیده.
+              <br></br>
+              هتل آلاله دارای رستوران گردان برای صرف ناهار و شام میباشد.{" "}
+              <br></br>از محل اقامتتان تا اسکله درگهان فاصله چندانی ندارید و با
+              5 دقیقه پیاده‌روی به ساحل می‌رسید. بازار قدیم، مجتمع تجاری پرشین
+              گلف، بازار اطلس، و بازار دو دلفین هم برای خرید در دسترس شما هستند
+              و با 5 دقیقه رانندگی به آنها می‌رسید.
             </div>
           </div>
           <div className="col-lg-3"></div>

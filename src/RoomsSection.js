@@ -44,7 +44,7 @@ const parallaxData = [
 ];
 export default function RoomsSection() {
   return (
-    <Div>
+    <Div id="rooms">
       <div className="container">
         <div className="rooms-header">
           <div
